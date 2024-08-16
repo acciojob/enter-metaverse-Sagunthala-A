@@ -12,13 +12,11 @@ document.body.append(para, btn);
 btn.addEventListener("click", () => {
   let h = document.createElement("h1");
 	let paraId = para.getAttribute('id');
-	console.log(paraId)
+
 	para.removeAttribute('id');
 	h.setAttribute('id',paraId)
   h.innerText = "Entered Metaverse";
   para.replaceWith(h);
-	console.log(para)
 });
 
 
-console.log(para);
