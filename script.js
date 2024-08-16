@@ -11,7 +11,9 @@ document.body.append(para, btn);
 
 btn.addEventListener("click", () => {
   let h = document.createElement("h1");
-	h.setAttribute("id", "status");
+	let paraId = para.getAttribute('id');
+	para.removeAttribute('id');
+	h.setAttribute('id',paraId)
   h.innerText = "Entered Metaverse";
   para.replaceWith(h);
 });
