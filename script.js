@@ -17,7 +17,6 @@ btn.addEventListener("click", () => {
 	h.setAttribute('id',paraId)
   h.innerText = "Entered Metaverse";
   para.replaceWith(h);
-	para.remove()
 	console.log(para)
 });
 
