@@ -9,14 +9,19 @@ btn.setAttribute("id", "enterBtn");
 btn.innerText = "Enter";
 document.body.append(para, btn);
 
-btn.addEventListener("click", () => {
-  let h = document.createElement("h1");
-	let paraId = para.getAttribute('id');
 
-	para.removeAttribute('id');
-	h.setAttribute('id',paraId)
-  h.innerText = "Entered Metaverse";
-  para.replaceWith(h);
+btn.addEventListener("click", () => {
+  para.innerText = "Entered Metaverse";
 });
+
+// btn.addEventListener("click", () => {
+//   let h = document.createElement("h1");
+// 	let paraId = para.getAttribute('id');
+
+// 	para.removeAttribute('id');
+// 	h.setAttribute('id',paraId)
+//   h.innerText = "Entered Metaverse";
+//   para.replaceWith(h);
+// });
 
 
